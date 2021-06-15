@@ -15,7 +15,6 @@
     <h6>-Make the Record clickable so users can insert past values faster</h6>
     <p></p>
     <h3>·Shop App</h3>
-    <h6>-Items in cart and item quantity in cart should be always loaded even if the user goes to another route</h6>
     <h6>-Create a popup menu when clicking the cart logo displaying all current items in cart and total price</h6>
     <h6>-Add item quantity of certain product in store(vuex)</h6>
     <h6>-Add a button in the popup menu to proceed to the purchase view</h6>

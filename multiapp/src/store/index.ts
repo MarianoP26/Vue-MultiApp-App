@@ -4,12 +4,12 @@ export default createStore({
   state: {
     itemCartQuantity: 0,
     products: [],
-    cart: {}
+    cart: {},
   },
   mutations: {
     addToCart(state, payload){
       state.itemCartQuantity++;
-      state.cart = payload;
+      state.cart[payload.id] = payload;
     },
     addProduct(state, payload) {
       state.products = payload;
@@ -26,6 +26,9 @@ export default createStore({
       }
     },
     addToCart({commit, state}, product) {
+      const cartItem = state.cart[product.id];
+
+      cartItem ? product.quantity = cartItem.quantity + 1: product.quantity = 1;
       commit('addToCart', product);
     }
   },
