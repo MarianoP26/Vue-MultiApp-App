@@ -17,7 +17,7 @@
         </li>
         
         <li class="nav-item">
-          <a class="nav-link" href="/game" tabindex="-1" aria-disabled="true">Game</a>
+          <a class="nav-link" href="/shop" tabindex="-1" aria-disabled="true">Shop</a>
         </li>
       </ul>
       <form class="d-flex">
